@@ -8,8 +8,15 @@
 
 <script setup lang="ts">
 
+const { data } = await useAsyncData(`content-1`, async () => {
 
+  
     const test = await queryContent().find()
+  return {
+    test
+  };
+});
+    const test = data.value
 
 // const { page } = useContent();
 // useSeoMeta({
