@@ -9,7 +9,7 @@
 <script setup lang="ts">
 
 
-    const test = await queryContent().find()
+    const test =[]//await queryContent().find()
 
 // const { page } = useContent();
 // useSeoMeta({
