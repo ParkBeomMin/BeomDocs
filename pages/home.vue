@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-
+/*
 const { data } = await useAsyncData(`content-1`, async () => {
 
   
@@ -19,7 +19,7 @@ const { data } = await useAsyncData(`content-1`, async () => {
 });
     console.log('data',data)
     const test = data.value.test
-
+*/ const test = []
 // const { page } = useContent();
 // useSeoMeta({
 //     description: page.value.description,
