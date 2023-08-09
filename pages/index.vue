@@ -1,15 +1,7 @@
 // https://velog.io/@1-blue/tailwindCss-markdown-%EC%A0%81%EC%9A%A9
 <template>
-    <main ref="contentDoc" class="my-8">
-        <ContentDoc v-slot="{ doc }">
-            <div class="pb-4 border-b-2 border-black">
-                <h1 class="font-bold text-3xl">{{ doc.title }}</h1>
-                <span v-for="(category, i) of doc.categories?.split(' ')" :key="`category-${i}`" class="mr-2 text-blue-400">#{{ category }}</span>
-                <p class="mt-4 text-right">{{ getDate(doc.date) }}</p>
-            </div>
-            <ContentRendererMarkdown class="mt-4 prose max-w-full" :value="convertImgPath(doc)" />
-        </ContentDoc>
-    </main>
+    <div>test</div>
+
 </template>
 
 <script setup lang="ts">
