@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     modules: ['@nuxt/content'],
    content: {
     api: {
-      baseURL: '/api/test'
+      baseURL: '/api/_test'
     }
   }
 });
