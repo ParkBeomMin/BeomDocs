@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: ['@nuxt/content'],
-    // content: {
-    //     // https://content.nuxtjs.org/api/configuration
-    // },
+   content: {
+    api: {
+      baseURL: '/api/test'
+    }
+  }
 });
