@@ -12,11 +12,13 @@ const { data } = await useAsyncData(`content-1`, async () => {
 
   
     const test = await queryContent().find()
+    console.log('test',test)
   return {
     test
   };
 });
-    const test = data.value
+    console.log('data',data)
+    const test = data.value.test
 
 // const { page } = useContent();
 // useSeoMeta({
