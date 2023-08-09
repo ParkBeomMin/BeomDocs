@@ -1,10 +1,16 @@
 // https://velog.io/@1-blue/tailwindCss-markdown-%EC%A0%81%EC%9A%A9
 <template>
-    <div>test</div>
+    <div>test
+    <nuxt-link v-for="t in test" :key="t.title" :to="t._path">{{ t.title }}</nuxt-link>
+    </div>
 
 </template>
 
 <script setup lang="ts">
+
+
+    const test = await queryContent('test').find()
+
 // const { page } = useContent();
 // useSeoMeta({
 //     description: page.value.description,
